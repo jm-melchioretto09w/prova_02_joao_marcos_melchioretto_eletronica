@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 02 Eletrônica: Potência e corrente equivalente</title>
+</head>
+<body>
+    
+    <script src="associaçãoGerar.js"></script>
+
+    <input type="number" id="qtd" min="0" placeholder="Quantidade de geradores" oninput="associGerar()">
+
+    <input type="number" id="tensao" placeholder="Tensão dos geradores" oninput="associGerar()">
+
+    <input type="number" id="corrente" placeholder="Corrente dos geradores" oninput="associGerar()">
+
+    Tipo de associação:
+    <select name="tipo de associação" id="associType" oninput="associGerar()">
+        <option value="S">Série</option>
+        <option value="P">Paralelo</option>
+    </select>
+
+    <p id="resultU">Ueq: 0.00V</p>
+    <p id="resultI">Ieq: 0.00A</p>
+
+    <br>
+
+    <a href="../main/index.html">
+        <button>Voltar</button>
+    </a>
+
+</body>
+</html>
