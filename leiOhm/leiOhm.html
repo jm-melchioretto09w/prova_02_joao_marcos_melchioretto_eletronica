@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 02 Eletrônica: Descobrir grandezas diversas</title>
+</head>
+<body>
+    
+    <script src="leiOhm.js"></script>
+
+
+    Grandeza desconhecida: 
+    <select name="grandeza desconecida" id="gndzDesc" oninput="leiOhm()">
+        <option value="U">U - Tensão</option>
+        <option value="R">R - Resistência</option>
+        <option value="I">I - Corrente</option>
+    </select>
+
+    <br>
+
+    Grandezas conhecidas:
+    <input type="number" id="u" placeholder="Insira Tensão" oninput="leiOhm()">
+    <input type="number" id="r" placeholder="Insira Resistência"oninput="leiOhm()">
+    <input type="number" id="i" placeholder="Insira Corrente"oninput="leiOhm()">
+
+    <br>
+
+    <p id="result">U = 0.00V</p>
+
+    <br>
+
+    <a href="../main/index.html">
+        <button>Voltar</button>
+    </a>
+
+</body>
+</html>
