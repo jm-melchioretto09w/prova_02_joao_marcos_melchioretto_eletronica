@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 02 Eletrônica: Converter unidades elétricas</title>
+</head>
+<body>
+
+    <script src="converterUnidades.js"></script>
+
+    <h3>Conversão de unidades elétricas</h3>
+
+    <p>Insira a unidade plena: </p>
+
+    <select name="unidadePlena" id="unitP" oninput="convertUnit()">
+        <option value="A">A - ampéres</option>
+        <option value="Ω">Ω - ohms</option>
+        <option value="V">V - volts</option>
+        <option value="W">W - watts</option>
+        <option value="J">J - joules</option>
+        <option value="C">C - coulomb</option>
+    </select>
+
+    <br>
+
+    <input type="number" id="inputNum" placeholder="Insira o valor original" oninput="convertUnit()">
+
+    <select name="prefixoIn" id="prefIn" oninput="convertUnit()">
+        <option value="0" id="teraI">TA</option>
+        <option value="1" id="gigaI">GA</option>
+        <option value="2" id="megaI">MA</option>
+        <option value="3" id="kiloI">KA</option>
+        <option value="4" id="nuloI" selected>A</option>
+        <option value="5" id="miliI">mA</option>
+        <option value="6" id="microI">µA</option>
+        <option value="7" id="nanoI">nA</option>
+        <option value="8" id="picoI">pA</option>
+    </select>
+
+    ==>
+
+    <select name="prefixoOut" id="prefOut" oninput="convertUnit()">
+        <option value="0" id="teraO">TA</option>
+        <option value="1" id="gigaO">GA</option>
+        <option value="2" id="megaO">MA</option>
+        <option value="3" id="kiloO">KA</option>
+        <option value="4" id="nuloO" selected>A</option>
+        <option value="5" id="miliO">mA</option>
+        <option value="6" id="microO">µA</option>
+        <option value="7" id="nanoO">nA</option>
+        <option value="8" id="picoO">pA</option>
+    </select>
+
+    <br>
+
+    <p id="result">Resultado:</p>
+
+    <br>
+    
+    <a href="../main/index.html">
+        <button>Voltar</button>
+    </a>
+    
+</body>
+</html>
