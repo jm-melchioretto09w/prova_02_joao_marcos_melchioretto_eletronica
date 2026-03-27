@@ -38,5 +38,5 @@ function convertUnit(){
 
     let res = og * (10 ** (3 * (prefixOut.value - prefixIn)));
 
-    result.innerText = "Resultado: " + res + prefixOut.options[prefixOut.selectedIndex].text;
+    result.innerText = "Resultado: " + res.toFixed(2) + prefixOut.options[prefixOut.selectedIndex].text;
 }

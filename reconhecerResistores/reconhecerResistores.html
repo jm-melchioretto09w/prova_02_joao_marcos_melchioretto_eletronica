@@ -11,12 +11,14 @@
 
     <h3>Descubra a resistência de um resistor a partir de suas faixas</h3>
 
-    <select name="numero de faixas" id="qtdF">
+    Quantidade: 
+    <select name="numero de faixas" id="qtdF" oninput="descobrirResist()">
         <option value="5">5</option>
         <option value="4">4</option>
     </select>
 
-    <select name="digito1" id="d1">
+    Cores:
+    <select name="digito1" id="d1" oninput="descobrirResist()">
         <option value="0">Preto</option>
         <option value="1">Marrom</option>
         <option value="2">Vermelho</option>
@@ -29,7 +31,7 @@
         <option value="9">Branco</option>
     </select>
 
-    <select name="digito2" id="d2">
+    <select name="digito2" id="d2" oninput="descobrirResist()">
         <option value="0">Preto</option>
         <option value="1">Marrom</option>
         <option value="2">Vermelho</option>
@@ -42,7 +44,7 @@
         <option value="9">Branco</option>
     </select>
 
-    <select name="digito3" id="d3">
+    <select name="digito3" id="d3" oninput="descobrirResist()">
         <option value="0">Preto</option>
         <option value="1">Marrom</option>
         <option value="2">Vermelho</option>
@@ -55,7 +57,7 @@
         <option value="9">Branco</option>
     </select>
 
-    <select name="multiplo" id="m">
+    <select name="multiplo" id="m" oninput="descobrirResist()">
         <option value="0">Preto</option>
         <option value="1">Marrom</option>
         <option value="2">Vermelho</option>
@@ -70,7 +72,7 @@
         <option value="-2">Prata</option>
     </select>
 
-    <select name="tolerancia" id="t">
+    <select name="tolerancia" id="t" oninput="descobrirResist()">
         <option value="1">Marrom</option>
         <option value="2">Vermelho</option>
         <option value="5">Ouro</option>
@@ -80,8 +82,8 @@
 
     <br>
 
-    <p id="resist">Resistência: 0.00 </p>
-    <p id="tolera">Tolerância: 0% = ±0.00 </p>
+    <p id="resist">Resistência: 0.00Ω</p>
+    <p id="tolera">Tolerância: 1% = ±0.00</p>
 
     <br>
 

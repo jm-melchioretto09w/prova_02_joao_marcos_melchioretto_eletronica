@@ -17,18 +17,18 @@ function descobrirResist(){
     let t = document.getElementById("t");
     t = t.value;
 
-    valueResist = '';
+    let valueResist = '';
 
     if(qtdF == 5){
 
-        d3.disable = false;
+        d3.disabled = false;
         d3 = d3.value;
 
         valueResist = d1 + d2 + d3;
 
     }else{
 
-        d3.disable = true;
+        d3.disabled = true;
 
         valueResist = d1 + d2;
 
@@ -36,9 +36,11 @@ function descobrirResist(){
 
     valueResist = Number(valueResist) * (10 ** m);
 
+    let valueTolera = Number(valueResist) * (t / 100)
+
     let resResist = document.getElementById("resist");
     let resTolera = document.getElementById("tolera");
 
-    resResist.innerText = "Resistência: " + valueResist.toFixed(2) + "Ω"
-    resTolera.innerText = 
+    resResist.innerText = "Resistência: " + Number(valueResist).toFixed(2) + "Ω";
+    resTolera.innerText = "Tolerância: " + t + "% = ±" + valueTolera.toFixed(2);
 }
