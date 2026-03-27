@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 02 Eletrônica: Resistência Equivalente</title>
+</head>
+<body>
+    
+    <script src="associacaoResist.js"></script>
+
+    <input type="number" id="qtd" min="0" placeholder="Quantidade de resistores" oninput="associResist()">
+
+    <input type="number" id="resist" placeholder="Resistência dos resistores" oninput="associResist()">
+
+    Tipo de associação:
+    <select name="tipo de associação" id="associType" oninput="associResist()">
+        <option value="S">Série</option>
+        <option value="P">Paralelo</option>
+    </select>
+
+    <p id="result">Req: 0.00Ω</p>
+
+    <br>
+
+    <a href="../main/index.html">
+        <button>Voltar</button>
+    </a>
+</body>
+</html>
