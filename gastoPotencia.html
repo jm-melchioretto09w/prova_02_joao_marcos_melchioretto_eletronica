@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 02 Eletrônica: Calculo de potência gasta por mês</title>
+</head>
+<body>
+
+    <script src="gastoPotencia.js"></script>
+
+    <h3>Calcule o gasto energético(kWh/mês) de seu eletrodoméstico</h3>
+
+    <input type="text" id="name" placeholder="Insira o nome" oninput="potenciaCalc()">
+    <input type="number" id="p" min="0" placeholder="Insira a potência" oninput="potenciaCalc()">
+    <select name="unidade" id="unit" oninput="potenciaCalc()">
+        <option value="0"> W </option>
+        <option value="1"> kW </option>
+    </select>
+    <input type="number" id="time" min="0" placeholder="Insira o tempo (h/dia) que é usado" oninput="potenciaCalc()">
+    <input type="number" id="price" min="0" placeholder="Insira o preço cobrado por kWh" oninput="potenciaCalc()">
+
+    <p id="resultPower">Gasto:</p>
+    <p id="resultPrice">Custo:</p>
+
+    <a href="index.html">
+        <button>Voltar</button>
+    </a>
+
+</body>
+</html>
