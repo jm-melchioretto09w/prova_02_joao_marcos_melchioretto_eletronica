@@ -3,9 +3,10 @@ function leiOhm(){
     let desc = document.getElementById("gndzDesc");
     desc = desc.value;
 
-    let u = document.getElementById("u")
-    let r = document.getElementById("r")    
-    let i = document.getElementById("i")
+    let u = document.getElementById("u");
+    let r = document.getElementById("r");  
+    let i = document.getElementById("i");
+    let p = document.getElementById("p");
 
     let res
     let unit
@@ -48,6 +49,19 @@ function leiOhm(){
 
             res = u / r;
             unit = 'A'
+
+            break;
+        case 'P':
+
+            u.disabled = false;
+            r.disabled = true;
+            i.disabled = false;
+
+            u = u.value;
+            i = i.value;
+
+            res = u * i;
+            unit = 'W'
 
             break;
     }
